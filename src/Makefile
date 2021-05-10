@@ -1,4 +1,4 @@
-# vrk 
+# vrk
 # See LICENSE file for copyright and license details.
 .POSIX:
 
@@ -44,7 +44,7 @@ install: main
 	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
 	sed "s/VERSION/$(VERSION)/g" < docs/main.1 > $(DESTDIR)$(MANPREFIX)/man1/main.1
 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/main.1
-	
+
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/main
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/main.1
