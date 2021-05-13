@@ -19,6 +19,8 @@ cd src/
 
 ${SUDO} make clean install
 
+main& 
+
 echo "main binary installed .............[DONE]."
 
 exit 0
